@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<Style id="z1">
+<IconStyle><Icon><href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href></Icon></IconStyle>
+</Style>
+<Style id="examplePolyStyle">
+    <PolyStyle>  
+    <color>#a00000ff</color>
+    <outline>0</outline>
+    </PolyStyle>
+  <LineStyle>
+  	<width>20</width>
+  </LineStyle>
+</Style>
+<Style id="nearest">
+<LineStyle>
+	<color>#FFFF00</color>
+    <width>15</width>
+</LineStyle>
+</Style>
+
+<Placemark><name>West-Adams</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2888659,34.0324338</coordinates></Point>
+</Placemark>
+<Placemark><name>Expo/Ver</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2933875,34.0180606</coordinates></Point>
+</Placemark>
+<Placemark><name>Verm/Jeff</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2940507,34.025635</coordinates></Point>
+</Placemark>
+<Placemark><name>Jeff/Fig</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2825227,34.022263</coordinates></Point>
+</Placemark>
+<Placemark><name>Fig/Expo</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2838941,34.0191765</coordinates></Point>
+</Placemark>
+<Placemark><name>Marshall</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2879678,34.0188291</coordinates></Point>
+</Placemark>
+<Placemark><name>SAL</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2916626,34.0194804</coordinates></Point>
+</Placemark>
+<Placemark><name>BOFA</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2792812,34.0270941</coordinates></Point>
+</Placemark>
+<Placemark><name>ArtofLiving</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2852273,34.0308765</coordinates></Point>
+</Placemark>
+
+<!-- CONVEX-HULL -->
+<Placemark><name>Point1</name>
+<styleUrl>#examplePolyStyle</styleUrl>
+<Polygon>
+	<outerBoundaryIs>
+		<LinearRing>
+			<coordinates>
+				-118.2933875,34.0180606,0
+				-118.2940507,34.025635,0
+				-118.2888659,34.0324338,0
+				-118.2852273,34.0308765,0
+				-118.2792812,34.0270941,0
+				-118.2838941,34.0191765,0
+				-118.2933875,34.0180606,0
+			</coordinates>
+		</LinearRing>
+	</outerBoundaryIs>
+</Polygon>
+</Placemark>
+
+
+<!-- 3 NEAREST NEIGHBORS -->
+<Placemark>
+
+<LineString>
+            <coordinates>-118.2940507,34.025635 -118.2888659,34.0324338</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+
+<LineString>
+            <coordinates>-118.2792812,34.0270941 -118.2888659,34.0324338</coordinates>
+</LineString>
+</Placemark>
+
+<Placemark>
+
+<LineString>
+            <coordinates>-118.2852273,34.0308765 -118.2888659,34.0324338</coordinates>
+</LineString>
+</Placemark>
+
+</Document></kml>
